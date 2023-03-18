@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+<div>
     <div style="background-color:#ffffff;margin: 0px;">
     
     
     
     <form action="index.html" method="get" class="s" id="login">
         <i style="text-align: center;color: rgb(69, 77, 128);"><h1>Login Tap</h1></i>
-        <div  class="logintap" style="display: block;" >
+        <div  class="logintap" style="display: block; margin-right: 60;padding-right:50px;" >
             <form class="model_content" action="/index.html" method="get">
                 <div><span onclick="closeloginTap()" style="color: crimson; font-size:xx-large;margin:10px ;"title="Close Modal">&times;</span></div>
                 <div class="imagecontainer">
@@ -67,24 +68,28 @@
             
             <script>function openNav(){
                 document.getElementById("slide").style.display="block"
-
+                document.getElementById("slide").style.width="300px"
+                
             }
                 function closeslide(){
                     document.getElementById("slide").style.display="none"
+                    document.getElementById("slide").style.transition.width="0px"
+                    
                 }
+                
             </script>
     <div class="hrcolor" style="background-color: #d9b7ed;margin: 0px;">
             <div><hr style="margin-bottom: 0%; padding: 3px;;background-color: #28202d;border-color: #d9b7ed;"></div>
         <span style="margin-bottom: 0%; margin-top: 0%; font-size:30px;cursor:pointer" class="left" onclick="openNav()">&#9776; open</span>
-        <button id="view" class="opentap" onclick="viewlogintap()" style="margin-left: 1350px;background-color: rgb(162, 162, 248);border-radius: 10px;padding-left: 15px;padding-right: 20px;padding-top: 10px;padding-bottom:7px;text-align: center;font-family: inherit;margin-top: 0%;">login</button></div>
+        <button id="view" class="opentap" onclick="viewlogintap()" style="margin-left: 1350px;background-color: rgb(162, 162, 248);border-radius: 10px;padding-left: 15px;padding-right: 20px;padding-top: 10px;padding-bottom:7px;text-align: center;font-family: inherit;margin-top: 0%;margin-right: 0px;">login</button></div>
             <div><hr style="margin-bottom: 0%; padding: 3px;;background-color: #28202d;border-color: #d9b7ed;"></div>
-    </div>
+    
     
             <div class="top_container"> 
-            <div class="slide" id="slide" style="border: 50px; background-color: black;background-position: left;background-size: cover;">
+            <div class="slide" id="slide">
                 <button style="background-color: black; color: aliceblue;" type="button" class="slidebut" onclick="closeslide()">&times;</button>
                 <br><br><br>
-                <a href="#About">About</a>
+                <a href="#description">About</a>
                 <br><br><br>
                 <a href="#skills">Services</a>
                 <br><br><br>
@@ -124,7 +129,7 @@
         <br>
         <br>
     
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
         <h1 class="skils">My skils</h1>
         <div class="midleclass">
         <br><br>
@@ -145,7 +150,7 @@
         <div class="hoppies">
             <h1 class="massage">Get in touch</h1>
             <br><br>
-            <h2 class="sax">if you love sax &#127927;  music as much as i do</h2>
+            <h2 class="sax">if you love sax &#127927; music as much as i do</h2>
             <br>
             <p>
                 if you love sax and jazz &#127927; music as much as i do <br>
@@ -173,20 +178,10 @@
 
         <a href="https://221008874.github.io/sax.html/">Clic Here</a>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b>
-        <table>
-            <th>
-                <div class="button">
-                <a href="https://221008874.github.io/contact1.html/">Contact</a>
-                </div>
-            </th>
-            <td>
-                <div class="but2">
-                    <a href=""></a>
-                </div>
-            </td>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b>
+        <div class="button2">
+            <a href="https://mail.google.com/mail/u/0/?hl=ar#inbox">Email</a>
         </div>
-        </table>
         <br><br><br><br>
         <div class="finally">
         </div>
@@ -207,9 +202,9 @@
             </table>
             <br><br><br><br><br><br>
             <p class="n">© 2023 Abdalrhman Ahmed Abdelmonem @ AAST.</p>
-    </div>    
 
 
+</div>
 </body>
 
 
