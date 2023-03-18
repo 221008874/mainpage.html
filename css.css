@@ -146,6 +146,7 @@ h2.sax{
 }
 div.button{
     background: #0d2c4d;
+    width: 0px;
     text-align: center;
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -153,12 +154,18 @@ div.button{
     font-size: 20px;
     padding: 20px 40px;
     text-decoration: none;
-    margin:18cm ;
+    margin:500px ;
     display:inline;
-    
-    
+    transition:0.5s;
 }
+div.button:hover {
+    padding:25px 45px;
+    background-color: #081140;
+
+}
+
 div.bbb{
+
     
     background: #057175;
     background-image: url(img/music.png);
@@ -174,10 +181,7 @@ div.bbb{
     display:inline; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-div.button:hover {
-    background: #0d1514;
-    
-}
+
 img.im{
     margin: 0px;
     padding: 0px;
@@ -202,9 +206,25 @@ div.down{
     background-position: center;
     height: 300px;
 }
-div.but2:hover {
-    background: #30e3cb;
-    
+div.button2{
+    background: #0d2c4d;
+    width: 0px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px 40px;
+    text-decoration: none;
+    margin:695px ;
+    display:inline;
+    transition:0.5s;
+    margin-right: 0px;
+}
+
+div.button2:hover {
+    background:#081140 ;
+    padding:25px 40px;
 }
 div.first:hover {
     background-color: #081917;
@@ -244,34 +264,40 @@ div.middle{
 #login{
     display: none;
 }
+.slide.slidebut {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 div.slide{
-    height: 100%;
-    width: 300px; 
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #030202;
-    transition: 0.5s;
-    padding-top: 60px;
+        height: 100%;
+        width:300; 
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: #030202;
+        padding-top: 60px;
+        transition: 2s;
+        transition-property: width;
+}
+div.slide:hover{
+    width: 0px;
+}
 
-}
-@media screen and (max-height:450px){
-    .sliode{
-        padding-top: 15px;
-    }
-    .slide a{
-        font-size: medium;
-    }
-}
 .slide a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #ffd06b;
     display: block;
-    transition: 0.3s;
+    transition:width 300px;
+
+    
 }
 .slide.slidebut {
     background-color: #000000;
